@@ -1,0 +1,153 @@
+//  留言列表
+@font-face {
+  font-family: 'iconfont';  /* project id 371514 */
+  src: url('//at.alicdn.com/t/font_371514_erkla79mn8aug14i.eot');
+  src: url('//at.alicdn.com/t/font_371514_erkla79mn8aug14i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_371514_erkla79mn8aug14i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_371514_erkla79mn8aug14i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_371514_erkla79mn8aug14i.svg#iconfont') format('svg');
+}
+#m-messList {
+  margin-top: .5rem;
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  width: 7.5rem;
+  height: 13.34rem;
+  #mesHead {
+    #back .iconfont {
+      font-size: .4rem;
+      color: #855b31;
+      padding-left: .07rem;
+      padding-top: .2rem;
+    }
+    #label {
+      display: flex;
+      margin-left: .15rem;
+      margin-top: .1rem;
+      #headImg{
+        display: block;
+      }
+      #img{
+        width: 1.7rem;
+        height:1.7rem;
+      }
+      #descript {
+        margin-left: .4rem;
+        margin-top: .25rem;
+        width: 5rem;
+        #ImgName {
+          font-size: .35rem;
+          color: #855b31;
+        }
+        #imgWord {
+          margin-top: .5rem;
+          font-size: .25rem;
+          color: #855b31;
+          .iconfont {
+            font-size: .4rem;
+            margin-right: .18rem;
+          }
+        }
+      }
+    }
+  }
+  #messMain {
+    margin-top: .35rem;
+    #wonderfulMes {
+      width: 7.5rem;
+      height: .55rem;
+      background-color: #855b31;
+      color: #fff;
+      font-size: .35rem;
+      padding-left: .35rem;
+      line-height: .55rem;
+    }
+    #message {
+      margin-top: .3rem;
+      margin-left: .2rem;
+      font-size: .25rem;
+      color: #855b31;
+      li {
+        width: 7.5rem;
+        display: flex;
+        #mesImg img {
+          width: .75rem;
+          height: .75rem;
+          border-radius: .375rem;
+        }
+        #messDes {
+          margin-left: .1rem;
+          border-bottom: .02rem solid #6c6c6c;
+          padding-bottom: .1rem;
+          width: 7rem;
+          #mes-first {
+            display: flex;
+            margin-top: .1rem;
+            line-height: .4rem;
+            position: relative;
+            .messageNum {
+              position: absolute;
+              right: .3rem;
+              color: #855b31;
+            }
+            .iconfont {
+              font-size: .3rem;
+              position: absolute;
+              right: .8rem;
+              color: #855b31;
+            }
+          }
+          #data {
+            line-height: .4rem;
+          }
+          #mes-word {
+            line-height: .4rem;
+            color: #855b31;
+          }
+        }
+      }
+    }
+  }
+  #edit {
+    width: 7.5rem;
+    height: .9rem;
+    background-color: #855b31;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding-left: .28rem;
+    #enter {
+      width: 5.3rem;
+      height: .6rem;
+      background-color: #855b31;
+      border-bottom: .02rem solid #fff;
+      margin-top: .1rem;
+      color: #fff;
+      font-size: .23rem;
+    }
+    .iconfont {
+      font-size: .35rem;
+      color: #fff;
+      margin-top: .1rem;
+    }
+    #send {
+      width: 1rem;
+      height: .5rem;
+      background-color: #ff4200;
+      border-radius: .03rem;
+      color: #fff;
+      text-align: center;
+      line-height: .5rem;
+      position: absolute;
+      right: .07rem;
+      top: .2rem;
+      font-size: .23rem;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="js/lib/handlebars-v4.0.10.js"></script>
+    <script id="detail-template" type="text/x-handlebars-template">
+        <div id="goodsImage">
+            <img src="{{goodsImage}}"/>
+        </div>
+        <div class="information">
+            <span id="name">{{name}}|</span>
+            <span class="priceImg iconfont">&#xe6e2;</span>
+            <span id="price">{{price}}</span>
+            <a id="collection" class="iconfont">&#xe600;</a><br>
+            <span id="sales">{{sales}}人购买</span>
+            <a href="messageList.html?goodId={{id}}" id="commentNum" class="iconfont">&#xe601; 留言板{{commentNum}}+&#xe607;</a>
+        </div>
+        <div class="line"></div>
+    </script>
+    <script id="three-template" type="text/x-handlebars-template">
+        <span>详情</span>
+        {{#each this}}
+        <img src="{{detailImgUrl}}"/>
+        {{/each}}
+    </script>
+    <script id="buy-template" type="text/x-handlebars-template">
+        <div class="buy">
+            <a  id="addCar">加入购物车</a>
+            <a  id="buyNow">立刻购买</a>
+            <!--餐桌-->
+            <a id="car" class="iconfont" href="dinTable.html">&#xe602;</a>
+        </div>
+        <div class="more"></div>
+        <div class="open">
+            <span id="close" class="iconfont">&#xe62d;</span>
+            <span class="span1">规格:</span>
+            <div class="size">
+                <input type="button" value="大"  class="big" />
+                <input type="button" value="中"  class="mid" />
+                <input type="button" value="小"  class="small"/>
+            </div>
+            <span class="span2">数量:</span>
+            <div class="goodsCount">
+                <span id="reduce" class="iconfont">&#xe61a;</span>
+                <span id="count">1</span>
+                <span id="plus" class="iconfont">&#xe684;</span>
+            </div>
+            <div class="size11">
+                <a id="determine0" href="#">确定</a>
+                <a id="determine1" href="#">确定</a>
+            </div>
+        </div>
+    </script>
+    <title>详情</title>
+</head>
+<body>
+<div id="m-detail">
+    <div id="m-detail0">
+        <!--<div id="goodsImage">-->
+        <!--<img src="{{imageUrl}}"/>-->
+        <!--</div>-->
+        <!--<div class="information">-->
+        <!--<span id="name">{{name}}|</span>-->
+        <!--<span class="priceImg iconfont">&#xe6e2;</span>-->
+        <!--<span id="price">{{price}}</span>-->
+        <!--<span id="collection" class="iconfont">&#xe616;</span><br>-->
+        <!--<span id="sales">{{sales}}人购买</span>-->
+        <!--<a href="messageList.html" id="commentNum" class="iconfont">&#xe605; 留言板{{commentNum}}+></a>-->
+        <!--</div>-->
+        <!--<div class="line"></div>-->
+    </div>
+    <div class="picture">
+        <!--<span>详情</span>-->
+        <!--{{#each this}}-->
+        <!--<img src="{{detailImgUrl}}"/>-->
+        <!--{{/each}}-->
+    </div>
+    <div class="buy">
+        <!--<a href="#" id="addCar">加入购物车</a>-->
+        <!--<a href="#"  id="buyNow">立即购买</a>-->
+        <!--<a id="car" class="iconfont" href="dinTable.html">&#xe602;</a>-->
+
+ <!--   <div class="more"></div>
+    <div class="open">
+        <span id="close" class="iconfont">&#xe62d;</span>
+        <span class="span1">规格:</span>
+        <div class="size">
+            <input type="button" value="大" id="big" />
+            <input type="button" value="中" id="mid" />
+            <input type="button" value="小" id="small"/>
+        </div>
+        <span class="span2">数量:</span>
+        <div class="goodsCount">
+            <span id="reduce" class="iconfont">&#xe61a;</span>
+            <span id="count">1</span>
+            <span id="plus" class="iconfont">&#xe8a1;</span>
+        </div>
+        <div class="size11">
+            <a id="determine0" href="#">确定</a>
+            <a id="determine1" href="dinTable.html">确定</a>
+        </div>
+    </div>-->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="./js/lib/velocity.min.js"></script>
+<script type="text/javascript" src="./js/module/detail.js"></script>
+
+</html>

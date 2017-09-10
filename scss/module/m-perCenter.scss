@@ -1,0 +1,255 @@
+#m-perCer {
+
+  #head-portrait {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: .5rem;
+    position: relative;
+  }
+  #circle-left {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+  }
+  #circle-left img {
+
+    border-radius: 50%;
+    background-color: #976b3e;
+  }
+  #circle-right {
+    width: .6rem;
+    height: .6rem;
+    border: .01rem solid #6c3c0a;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 2.65rem;
+    top: 1.4rem;
+  }
+  #circle-right p {
+    color: #ff8c13;
+    text-align: center;
+    font-size: .23rem;
+    line-height: .6rem;
+  }
+  #middle {
+    width: 100%;
+    height: .93rem;
+  }
+  #middle .nickname {
+    font-size: .35rem;
+    line-height: .55rem;
+    color: #583d32;
+    text-align: center;
+  }
+  #middle .discount {
+    font-size: .28rem;
+    font-weight: bolder;
+    line-height: .4rem;
+    color: #583d32;
+    text-align: center;
+  }
+  #middle .count{
+    color: #ff8c13;
+    font-size: .3rem;
+    font-weight: bolder;
+    line-height: .4rem;
+    text-align: center;
+  }
+  #menu {
+    width: 100%;
+    height: 1.81rem;
+    padding-left: .98rem;
+    padding-top: .3rem;
+  }
+  #myorder, #unevaluate, #coupon {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: relative;
+  }
+  #unevaluate {
+    margin: -1.3rem auto 0 2.1rem;
+  }
+  #coupon {
+    margin: -1.3rem auto 0 4.2rem;
+  }
+  #myorder .iconfont {
+    width: .44rem;
+    height: .44rem;
+    color: #976b3e;
+    position: absolute;
+    top: .14rem;
+    left: .41rem;
+    font-size: .42rem;
+    font-family: "iconfont" !important;
+    font-style: normal;
+  }
+  #unevaluate .iconfont {
+    width: .44rem;
+    height: .44rem;
+    color: #976b3e;
+    position: absolute;
+    top: .14rem;
+    left: .41rem;
+    font-size: .42rem;
+    font-family: "iconfont" !important;
+    font-style: normal;
+  }
+  #coupon .iconfont {
+    width: .44rem;
+    height: .44rem;
+    color: #976b3e;
+    position: absolute;
+    top: .2rem;
+    left: .41rem;
+    font-size: .42rem;
+    font-family: "iconfont" !important;
+    font-style: normal;
+  }
+  #myorder, #unevaluate, #coupon p {
+    line-height: .64rem;
+    text-align: center;
+    font-size: .25rem;
+    color: #986c3f;
+  }
+  #myorder p {
+    position: absolute;
+    bottom: .1rem;
+    left: .14rem;
+  }
+  #unevaluate p {
+    position: absolute;
+    bottom: .1rem;
+    left: .25rem;
+  }
+  #coupon p {
+    position: absolute;
+    bottom: .1rem;
+    left: .14rem;
+  }
+  .select{
+    margin-top: .1rem;
+  }
+  #collect, #inform, #usabout {
+    margin: 0 auto;
+    width: 6.8rem;
+    height: .66rem;
+    background-color: #e0e0e0;
+    border-radius: .1rem;
+    padding-left: .17rem;
+    position: relative;
+  }
+  #collect, #inform, #usabout p {
+    font-size: .25rem;
+    color: #986c3f;
+    line-height: .66rem;
+    margin-bottom: .47rem;
+
+  }
+  #collect p {
+    position: absolute;
+    left: .7rem;
+    top: 0;
+  }
+  #inform p {
+    position: absolute;
+    left: .7rem;
+    top: 0;
+  }
+  #usabout p {
+    position: absolute;
+    left: .7rem;
+    top: 0;
+  }
+  #collect .iconfont-left {
+    font-family: "iconfont" !important;
+    margin-right: .1rem;
+    color: #583d32;
+    font-size: .44rem;
+    font-style: normal;
+  }
+  .iconfont-right {
+    color: #583d32;
+    font-size: .23rem;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    position: absolute;
+    right: .37rem;
+    bottom: 0;
+  }
+  #inform .iconfont-left {
+    font-family: "iconfont" !important;
+    margin-right: .1rem;
+    color: #583d32;
+    font-size: .44rem;
+    font-style: normal;
+  }
+  #inform .iconfont-dot{
+    font-family: "iconfont" !important;
+    margin-right: .1rem;
+    color: #583d32;
+    font-size: .44rem;
+    font-style: normal;
+  }
+  #inform .iconfont-dot {
+    font-family: "iconfont" !important;
+    position: absolute;
+    bottom: .1rem;
+    left: 1.7rem;
+    color: red;
+    font-size: .15rem;
+    font-style: normal;
+  }
+  #usabout .iconfont-left {
+    font-family: "iconfont" !important;
+    margin-right: .1rem;
+    color: #583d32;
+    font-size: .44rem;
+    font-style: normal;
+    position: absolute;
+    top: .1rem;
+  }
+  #usabout .iconfont-right {
+    position: absolute;
+    top: .22rem;
+  }
+
+  .footerImg{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #footer{
+    width: 7.50rem;
+    font-size: .22rem;
+    position:fixed;
+    bottom:0;
+    background-color: #986c3f;
+    height: 1.0rem;
+    ul{
+      display: flex;
+      justify-content:space-around;
+      li{
+        margin-left: .72rem;
+        margin-top:.13rem;
+        a{
+          width:.80rem;
+          height: .80rem;
+          display: block;
+          font-size: .24rem;
+          color:#fff;
+        }
+      }
+      .footerImg{
+        font-size: .46rem;
+
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,220 @@
+//分类界面
+#m-classify {
+
+  .like{
+    height: .67rem;
+    font-size: .3rem;
+    line-height:.67rem;
+    padding-left: .25rem;
+    font-weight: bold;
+    .iconfont{
+      font-size: .3rem;
+      color: #ff4200;
+    }
+  }
+  #guess{
+    position: relative;
+    height: 1.9rem;
+    width:7.5rem;
+    overflow: hidden;
+    .like-pics{
+      width: 7.5rem;
+      height: 1.9rem;
+      display: flex;
+      position: absolute;
+      left:0;
+      top:0;
+      li{
+        flex: 1;
+        padding: 0 .25rem;
+        a{
+          width:2rem;
+          height: 1.9rem;
+          border-radius:.1rem ;
+          display: block;
+          border: 1px solid silver;
+          overflow: hidden;
+          background-position: center;
+          &:hover{
+            border:2px solid #666 ;
+          }
+          img{
+            width: 2rem;
+            height:1.9rem;
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+
+  #change{
+    width:100%;
+    height: .95rem;
+    display: flex;
+    justify-content: center;
+    padding-top: .45rem;
+    .btn{
+      width: 1.8rem;
+      height:.5rem;
+      border-radius: .25rem;
+      border: 2px solid #666;
+      font-size: .24rem;
+      line-height: .46rem;
+      padding-left: .35rem;
+      .iconfont{
+        font-size: .24rem;
+        color: #000;
+        margin-left: .1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .new,.hot{
+    .title{
+      display: flex;
+      line-height: .5rem;
+      padding-left: .25rem;
+      justify-content: space-between;
+      height:.5rem;
+      .iconfont{
+        padding-left:.12rem;
+        line-height: .5rem;
+        font-size: .3rem;
+        margin:0;
+      }
+      .subtitle{
+        display: flex;
+        justify-content: flex-start;
+        h1{
+          font-size: .3rem;
+
+        }
+        .logo{
+          color: #ff4200;
+          font-size: .3rem;
+        }
+      }
+      a{
+        display: flex;
+        margin-right: .35rem;
+        .next{
+          color: #000;
+          font-size: .3rem;
+
+        }
+      }
+
+    }
+    #new-sec{
+      .section{
+        display: block;
+        width:6.8rem;
+        margin-left: .35rem;
+        .content{
+
+          display: flex;
+          justify-content: space-between;
+          border-bottom: .02rem #666 solid;
+
+          .container{
+            width: 3.45rem;
+            height: 2.5rem;
+
+            div{
+              font-size: .24rem;
+              color: #89591b;
+              line-height: .72rem;
+              font-weight: bold;
+              margin-left: .2rem;
+            }
+            p{
+              color: #815c16;
+              font-size: .18rem;
+              line-height: .3rem;
+              height: .6rem;
+              margin-left: .2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;//n->根据你自己的需求改变行数
+              -webkit-box-orient: vertical;
+            }
+            .user{
+              display: flex;
+              justify-content: flex-start;
+              padding-top: .4rem;
+              margin-left: .1rem;
+              p{
+                font-size: .20rem;
+                color: #89591b;
+                line-height: .48rem;
+                margin-left: .1rem;
+              }
+              img{
+                width: .48rem;
+                height: .48rem;
+                border-radius: .24rem;
+                margin:0;
+              }
+            }
+          }
+          .pic{
+            width:1.6rem;
+            height: 1.6rem;
+            margin-top: .35rem;
+            margin-right: .4rem;
+          }
+        }
+      }
+    }
+
+
+  }
+  .new{
+    .iconfont{
+      font-size: .7rem;
+      font-weight: bold;
+    }
+  }
+  .hot{
+    padding-top: .1rem;
+    .iconfont{
+      font-size: .7rem;
+      font-weight: bold;
+    }
+    .title{
+      margin-bottom: .1rem;
+    }
+    .contain{
+      #hot-list{
+        display: flex;
+        width:7.5rem;
+        padding: 0 .35rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+          margin-bottom: .25rem;
+          a{
+            display: block;
+            width:3.15rem;
+            height:1.6rem;
+            border: 1px solid #666;
+            border-radius: .1rem;
+            &：hover{
+              border: 2px solid #666;
+            }
+            img{
+              width: 100%;
+              height:100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cache{
+    height: 1rem;
+  }
+
+}

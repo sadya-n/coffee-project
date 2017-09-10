@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 371514 */
+  src: url('//at.alicdn.com/t/font_371514_1kulwv3ydvbtvs4i.eot');
+  src: url('//at.alicdn.com/t/font_371514_1kulwv3ydvbtvs4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_371514_1kulwv3ydvbtvs4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_371514_1kulwv3ydvbtvs4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_371514_1kulwv3ydvbtvs4i.svg#iconfont') format('svg');
+}
+#m-dinTbe {
+  width: 7.5rem;
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+#main{
+  width: 100%;
+}
+#current{
+  display: flex;
+  justify-content: center;
+}
+#current span{
+  padding-top: .22rem;
+  font-size: .4rem;
+  color: #986c3f;
+}
+#middleImg{
+  display: flex;
+  position: relative;
+  padding-top: .1rem;
+  height:6.4rem;
+  #leftArrow{
+    position: absolute;
+    left:0;
+    top:3rem;
+    font-size: .8rem;
+    color: #986c3f;
+  }
+  #box{
+    width: 4rem;
+    height: 6.4rem;
+    position: absolute;
+    left:50%;
+    margin-left: -2rem;
+  }
+  #rightArrow{
+    position: absolute;
+    right:0;
+    top:3rem;
+    font-size: .8rem;
+    color: #986c3f;
+  }
+}
+
+#ul1{
+  position: absolute;
+  display: flex;
+}
+#ul1 li{
+  width: 4rem;
+  height: 6.4rem;
+}
+
+#ul1 li img{
+  width: 4rem;
+  height: 6.4rem;
+}
+#coffeename{
+  display: flex;
+  justify-content: center;
+}
+#coffeename span{
+  font-size: .3rem;
+  color:#9e6c47 ;
+  padding-top: .2rem;
+}
+#number{
+  display: flex;
+  justify-content: center;
+}
+#number #wordNum{
+  padding-top: .25rem;
+  font-size: .25rem;
+  color: #9e6c47;
+}
+#number .iconfont{
+  padding-top: .25rem;
+  font-size: .38rem;
+  color:#9e6c47;
+  padding-right: .2rem;
+  padding-left: .2rem;
+}
+#number #add{
+  font-size: .4rem;
+}
+#number #definiteNum{
+  font-size: .5rem;
+  color: #ff4200;
+  margin-top: .1rem;
+}
+#price{
+  display: flex;
+  justify-content: center;
+  padding-right: .35rem;
+  margin-top: .1rem;
+}
+#price .iconfont{
+  font-size: .4rem;
+  color:#9e6c47;
+  padding-right: .2rem;
+}
+#price #wordPrice{
+  padding-top: .15rem;
+  font-size: .25rem;
+  color: #9e6c47;
+}
+#price #numPrice{
+  font-size: .5rem;
+  color: #ff4200;
+}
+#buy{
+  width: 3rem;
+  height: 1rem;
+  background-color: #855b31;
+  border-radius: .5rem;
+  position: fixed;
+  bottom: 1.18rem;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+#wordBuy{
+  font-size: .45rem;
+  color: white;
+  padding-left: .38rem;
+  padding-top: .15rem;
+}
+#buy .iconfont{
+  color: white;
+  font-size: .8rem;
+  padding-left: .3rem;
+  padding-top: .08rem;
+}
+#nowBuy {
+  display: none;
+  width: 7.5rem;
+  height: 4.8rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f1f1;
+  .iconfont{
+    margin-left: 7rem;
+    font-size: .5rem;
+  }
+  #total {
+    border-bottom: .01rem solid #6c6b6b;
+    height: .5rem;
+    display: flex;
+    position: relative;
+    #summation,#nowNumber{
+      display: block;
+      position: absolute;
+      font-size: .28rem;
+      color: #855b31;
+      .totalNum {
+        font-size: .38rem;
+        color: #ff4200;
+      }
+    }
+    #summation{
+      left: .75rem;
+    }
+    #nowNumber{
+      right: .3rem;
+    }
+  }
+  #goodsList{
+    height:2.5rem;
+    overflow: scroll;
+  }
+  #goodsList li{
+    position: relative;
+    width: 7.5rem;
+    height:.50rem;
+    background-color: #977558;
+    margin-top: .1rem;
+    color: #ffffff;
+    font-size: .25rem;
+    display: flex;
+    line-height: .5rem;
+    .goodsName{
+      position: absolute;
+      left: .75rem;
+    }
+    .iconfont{
+      font-size: .35rem;
+      position: absolute;
+      right: .85rem;
+    }
+  }
+  #immediateBuy{
+    width: 4.6rem;
+    height:.8rem;
+    background-color: #855b31;
+    position: absolute;
+    bottom:.35rem;
+    left:1.4rem;
+    color: white;
+    border-radius: .4rem;
+    text-align: center;
+    line-height: .8rem;
+    font-size: .35rem;
+  }
+}
+#cover{
+  width: 7.5rem;
+  height:8.54rem;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top:0;
+  display: none;
+}
+#payWhy{
+  display: none;
+  width: 7.5rem;
+  height: 4.8rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f1f1;
+  #buttonClose{
+    font-size: .5rem;
+    right: .1rem;
+    position: absolute;
+    z-index: 10;
+  }
+  #payMoney{
+    width: 7.5rem;
+    height:.75rem;
+    font-size: .27rem;
+    color:#855b31;
+    border-top: .02rem solid #6c6c6b;
+    border-bottom: .02rem solid #6c6c6b;
+    line-height: .75rem;
+    padding-left:.6rem;
+    position:relative;
+    span{
+      font-size: .4rem;
+      color: #ff4200;
+      height:.75rem;
+    }
+  }
+  #checkWay{
+    font-size: .27rem;
+    color:#855b31;
+    padding-left:.6rem;
+    padding-top: .05rem;
+  }
+  #check{
+    font-size: .27rem;
+    color:#855b31;
+    padding-left:.6rem;
+    padding-top: .05rem;
+    display: flex;
+    #weixin{
+      font-size: .35rem;
+      color: #5aae3a;
+      margin-top: .05rem;
+    }
+    p{
+      margin-left: .05rem;
+    }
+    #sure{
+      font-size: .38rem;
+      position: absolute;
+      right:1rem;
+    }
+  }
+  #affirmPay{
+    width:4.6rem;
+    height:.8rem;
+    font-size: .45rem;
+    background-color: #855b31;
+    border-radius: .4rem;
+    color: white;
+    line-height: .8rem;
+    text-align: center;
+    position: absolute;
+    bottom:.4rem;
+    left:1.45rem;
+  }
+}
+#success{
+  display:none;
+  width: 7.5rem;
+  height: 4.8rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f1f1;
+  color: green;
+  font-size: .6rem;
+  text-align: center;
+  line-height: 4.8rem;
+}
+#m-nav{
+  width: 7.50rem;
+  font-size: .22rem;
+  position:fixed;
+  bottom:0;
+  background-color: #986c3f;
+  height: 1.0rem;
+  ul{
+    display: flex;
+    justify-content:space-around;
+    li{
+      margin-left: .72rem;
+      margin-top:.13rem;
+      a{
+        width:.80rem;
+        height: .80rem;
+        display: block;
+        font-size: .24rem;
+        color:#fff;
+      }
+    }
+    .iconfont{
+      font-size: .46rem;
+    }
+  }
+}

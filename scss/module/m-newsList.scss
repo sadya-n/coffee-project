@@ -1,0 +1,68 @@
+//  消息列表
+
+#m-newsList {
+  width: 7.5rem;
+  .back{
+    height: .88rem;
+    width:100%;
+    position: relative;
+    a{
+      display: block;
+      i{
+        position: absolute;
+        font-size: .45rem;
+        top: .36rem;
+        left: .35rem;
+      }
+    }
+
+  }
+  #main{
+    padding-top: .5rem;
+    .section{
+      padding-left:  .35rem;
+      padding-top:  .2rem;
+      display: flex;
+      img{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius:  .6rem;
+      }
+      .content{
+        width: 5.4rem;
+        height: 1.3rem;
+        margin-left: .2rem;
+        border-bottom: 1px #666 solid;
+        padding-top: .18rem;
+        display: flex;
+        justify-content: space-between;
+        padding-right: .2rem;
+        .user{
+          font-size: .24rem;
+          font-weight: bold;
+          color: #89591B;
+          margin-left: .2rem;
+          margin-bottom: .16rem;
+          height: .25rem;
+        }
+        p{
+          font-size: .18rem;
+          color: #815C16;
+          line-height: .26rem;
+          width: 20em;
+          height: 2em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-left: .55rem;
+        }
+      }
+      .read{
+        font-size: .2rem;
+        color: #ff4200;
+        display: block;
+      }
+
+    }
+  }
+
+}

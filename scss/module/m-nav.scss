@@ -1,0 +1,29 @@
+//  底部导航
+#m-nav {
+  width: 7.50rem;
+  font-size: .22rem;
+  position:fixed;
+  bottom:1.0rem;
+  background-color: #986c3f;
+  height: 1.0rem;
+  ul{
+    display: flex;
+    justify-content:space-around;
+    li{
+      margin-left: .72rem;
+      margin-top:.13rem;
+      a{
+        width:.80rem;
+        height: .80rem;
+        display: block;
+        font-size: .24rem;
+        color:#fff;
+      }
+    }
+    .iconfont{
+      font-size: .46rem;
+
+    }
+  }
+
+}

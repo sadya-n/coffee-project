@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        !function(e,t,i,r){function n(){var e=document.querySelector("head"),t=document.createElement("div");t.style.width="1rem",t.style.display="none",e.appendChild(t);var i=parseFloat(window.getComputedStyle(t,null).width);return e.removeChild(t),i}function a(){var r=d.getBoundingClientRect().width;r/c>768&&(r=768*c);var n=r/e*t;if(!i){var a=p/16;n/=a}d.style.fontSize=n+"px",v.rem=n}var m,o=window,l=o.document,d=l.documentElement,s=l.querySelector('meta[name="viewport"]'),c=0,u=0,p=n(),v={};if(s){var h=s.getAttribute("content").match(/initial\-scale=([\d\.]+)/);h&&(console.warn("将根据已有的meta标签来设置缩放比例"),u=parseFloat(h[1]),c=parseInt(1/u))}if(!c&&!u){var f=o.devicePixelRatio;r?(c=f>=3&&(!c||c>=3)?3:f>=2&&(!c||c>=2)?2:1,u=1/c):(c=1,u=1/c)}if(d.setAttribute("data-dpr",c),!s)if(s=l.createElement("meta"),s.setAttribute("name","viewport"),s.setAttribute("content","width=device-width, initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),d.firstElementChild)d.firstElementChild.appendChild(s);else{var w=l.createElement("div");w.appendChild(s),l.write(w.innerHTML)}o.addEventListener("resize",function(){clearTimeout(m),m=setTimeout(a,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(m),m=setTimeout(a,300))},!1),a(),v.dpr=c,v.refreshRem=a,v.rem2px=function(e){var t=parseFloat(e)*this.rem;return"string"==typeof e&&e.match(/rem$/)&&(t+="px"),t},v.px2rem=function(e){var t=parseFloat(e)/this.rem;return"string"==typeof e&&e.match(/px$/)&&(t+="rem"),t},window.remmoka=v}
+        (750,100,!0,!0);
+        /*
+         * designWidth, oneRem2Px, resetScaleFontSizeToDefault, useScaleFix1pxTooBold
+         * @param designWidth 设计稿宽度 一般来说iPhone6是750 如果缩小就变成了375px
+         * @param oneRem2Px 1rem对应多少px
+         * @param resetScaleFontSizeToDefault 是否重置Android因为系统放大或者缩小字体带来的影响
+         * @param useScaleFix1pxTooBold 是否通过meta标签的scale处理1px过于粗的问题
+         * */
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>餐桌</title>
+</head>
+<body>
+<div id="m-dinTbe" class="m-dinTbe">
+    <div id="main" class="main">
+        <div id="current">
+            <!--<span class="nowCurrent">{{addOne number}}/</span>-->
+            <!--<span class="all"></span>-->
+        </div>
+        <div id="middleImg">
+            <div id="leftArrow" class="iconfont">&#xe611;</div>
+            <div id="box">
+                <!--<ul id="ul1">-->
+                <!--<li><a href=""><img id="img" src="{{goodImage}}" /></a></li>-->
+                <!--</ul>-->
+            </div>
+            <div id="rightArrow" class="iconfont">&#xe607;</div>
+        </div>
+        <div id="coffeename">
+            <!--<span>{{name}}</span>-->
+        </div>
+        <div id="number">
+            <div class="iconfont">&#xe6e1;</div>
+            <div id="wordNum">数量：</div>
+            <div class="iconfont" id="less">&#xe61a;</div>
+            <div id="definiteNum">
+                <!--<span>{{count}}</span>-->
+            </div>
+            <div class="iconfont" id="add">&#xe8a1;</div>
+        </div>
+        <div id="price">
+            <div class="iconfont" id="imgPrice">&#xe67c;</div>
+            <div id="wordPrice"> 单价：</div>
+            <div class="iconfont">&#xe6e2;</div>
+            <div id="numPrice">
+                <!--<span>{{price}}</span>-->
+            </div>
+        </div>
+        <div id="buy">
+            <span id="wordBuy">去结算</span>
+            <div class="iconfont">&#xe629;</div>
+        </div>
+        <div id="m-nav">
+        <ul class="footerUl">
+            <li>
+                <a href="index.html"><i class="iconfont">&#xe60d;</i><br>首页</a>
+            </li>
+            <li>
+                <a href="classify.html"><i class="iconfont">&#xe617;</i><br>发现</a>
+            </li>
+            <li>
+                <a href="dinTable.html"><i class="iconfont">&#xe602;</i><br>餐桌</a>
+            </li>
+            <li>
+                <a href="perCenter.html"><i class="iconfont">&#xe623;</i><br>我的</a>
+            </li>
+        </ul>
+    </div>
+        <div id="cover"></div>
+        <div id="nowBuy">
+            <div class="iconfont" >&#xe62d;</div>
+            <div id="total">
+                <span id="summation">合计：<span class="totalNum"></span>元</span>
+                <span id="nowNumber">数量：<span class="totalNum"></span>个</span>
+            </div>
+            <ul id="goodsList">
+                <!--<li>-->
+                <!--<span class="goodsName">马山克兰咖啡 X 1</span>-->
+                <!--<div class="iconfont">&#xe640;</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="goodsName">圣多斯咖啡 X 1</span>-->
+                <!--<div class="iconfont">&#xe640;</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="goodsName">蓝山咖啡 X 2</span>-->
+                <!--<div class="iconfont">&#xe640;</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="goodsName">危地马拉咖啡 X 1</span>-->
+                <!--<div class="iconfont">&#xe640;</div>-->
+                <!--</li>-->
+            </ul>
+            <div id="immediateBuy" >立刻购买</div>
+        </div>
+        <div id="payWhy">
+            <div class="iconfont" id="buttonClose">&#xe62d;</div>
+            <div id="payMoney">需支付：￥<span></span></div>
+            <p id="checkWay">选择支付方式</p>
+            <div id="check">
+                <div class="iconfont" id="weixin">&#xe673;</div>
+                <p>微信支付</p>
+                <div class="iconfont" id="sure">&#xe640;</div>
+            </div>
+            <div id="affirmPay">确认支付</div>
+        </div>
+        <div id="success">
+            支付成功！
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="./js/lib/handlebars-v4.0.10.js"></script>
+<script id="current-template" type="text/x-handlebars-template">
+    <span class="nowCurrent">{{addOne number}}/</span>
+    <span class="all"></span>
+</script>
+<script id="box-template" type="text/x-handlebars-template">
+    <ul id="ul1">
+        <li><a href="detail.html?id={{goodId}}"><img id="img" src="{{goodImage}}" /></a></li>
+    </ul>
+</script>
+<script id="coffeename-template" type="text/x-handlebars-template">
+    <span>{{name}}</span>
+</script>
+<script id="definiteNum-template" type="text/x-handlebars-template">
+    <span>{{count}}</span>
+</script>
+<script id="numPrice-template" type="text/x-handlebars-template">
+    <span>{{price}}</span>
+</script>
+<script id="goodsList-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <li>
+        <span class="goodsName">{{name}} X {{count}}</span>
+        <div class="iconfont">&#xe640;</div>
+    </li>
+    {{/each}}
+</script>
+<script type="text/javascript" src="./js/lib/velocity.min.js"></script>
+<script type="text/javascript" src="./js/module/dinTable.js"></script>
+</html>

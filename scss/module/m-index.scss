@@ -1,0 +1,233 @@
+//  首页
+@font-face {
+  font-family: 'iconfont';  /* project id 371562 */
+  src: url('//at.alicdn.com/t/font_6b105q1qoq146lxr.eot');
+  src: url('//at.alicdn.com/t/font_6b105q1qoq146lxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_6b105q1qoq146lxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_6b105q1qoq146lxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_6b105q1qoq146lxr.svg#iconfont') format('svg');
+}
+#m-index {
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+    width: 7.50rem;
+  li{
+    list-style:none;
+    padding:0;
+    margin:0;
+    flex:1;
+  }
+  .header{
+    width:7.5rem;
+    height:3.33rem;
+    overflow:hidden;
+    position:relative;
+
+    .banner{
+      height:3.33rem;
+      display:flex;
+      position:absolute;
+      left:-7.5rem;
+      li{
+        width:7.5rem;
+        height:3.33rem;
+        a{
+          display:block;
+          img{
+            width:7.5rem;
+            height:3.33rem;
+          }
+        }
+      }
+    }
+    .list {
+      position:absolute;
+      bottom:.15rem;
+      left:50%;
+      display:flex;
+      justify-content:center;
+      z-index:200;
+      li {
+        width:.16rem;
+        height:.16rem;
+        background-color:#e1b467;
+        opacity:0.5;
+        border-radius:50%;
+        margin-left:.05rem;
+      }
+      .active {
+        background-color:#d47b20;
+        opacity:1;
+      }
+
+    }
+  }
+
+    #footer{
+        width: 7.50rem;
+        font-size: .22rem;
+        position:fixed;
+        bottom:0;
+        background-color: #986c3f;
+        height: 1.0rem;
+        ul{
+          display: flex;
+          justify-content:space-around;
+          li{
+            margin-left: .72rem;
+            margin-top:.13rem;
+                  a{
+                    width:.80rem;
+                    height: .80rem;
+                    display: block;
+                    font-size: .24rem;
+                    color:#fff;
+                  }
+              }
+            .footerImg{
+              font-size: .46rem;
+
+            }
+          }
+        }
+      }
+
+  #search{
+    display: flex;
+    #searchUrl{
+      border-radius: .2rem;
+      width: 6.30rem;
+      height: .55rem;
+      margin-top: .18rem;
+      margin-left: .20rem;
+      font-size: .24rem;
+      border: .02rem #666666 solid;
+      color: #666666;
+    }
+    #searchCard{
+      color: #666666;
+      margin-top:.14rem;
+      margin-left: .13rem;
+      font-size: .58rem;
+    }
+  }
+
+  #description{
+      display: flex;
+     align-content: center;
+      flex-wrap:wrap;
+    justify-content:center;
+
+    a{
+      color: #c48252;
+    }
+      .drinkCard ,.diyCard {
+        font-size: 1.30rem;
+        margin-left: 1.20rem;
+        margin-top: .30rem;
+      }
+
+     .eatCard , .moreCard{
+       font-size: 1.30rem;
+       margin-left: .90rem;
+       margin-top: .30rem;
+     }
+
+    #drink,#eat{
+       width: 3.43rem;
+       height: 2.0rem;
+       font-size: .25rem;
+       color:#c68759;
+      margin-top:.30rem;
+       span{
+         margin-left: 1.40rem;
+       }
+     }
+   #diy,#more{
+      width: 3.43rem;
+      height: 2.0rem;
+      font-size: .25rem;
+      color:#c68759;
+    }
+    #drink{
+      border-right:.02rem #666666 solid;
+      border-bottom:.02rem #666666 solid;
+    }
+    #eat{
+      border-left:.02rem #666666 solid;
+      border-bottom:.02rem #666666 solid;
+    }
+    #diy{
+      border-top:.02rem #666666 solid;
+      border-right:.02rem #666666 solid;
+      span{
+        margin-left: 1.55rem;
+      }
+    }
+    #more{
+      border-top:.02rem #666666 solid;
+      border-left:.02rem #666666 solid;
+      span{
+        margin-left: 1.40rem;
+      }
+    }
+  }
+  #card{
+    height: 2.56rem;
+    width: 6.70rem;
+    margin-top: .30rem;
+    margin-left: .35rem;
+    border: .04rem #666666 solid;
+    border-radius:.20rem;
+    position: relative;
+    overflow: hidden;
+    .like-pics{
+      display: flex;
+      position: absolute;
+      li{
+        width: 6.70rem;
+        height: 2.35rem;
+        flex: 1;
+      a {
+        width: 6.70rem;
+        height: 2.35rem;
+        display:block;
+        overflow: hidden;
+        img {
+          display: flex;
+          width: 6.40rem;
+          height: 2.35rem;
+          border-radius: .20rem;
+          margin-top: .05rem;
+          margin-left: .11rem;
+        }
+      }
+      }
+
+    }
+    #change{
+      position: relative;
+      .btn{
+        width: 1.50rem;
+        height: .45rem;
+        background-color: #fff;
+        font-size: .26rem;
+        color: #6c4d29;
+        position: absolute;
+        border-radius: .20rem;
+        text-align: center;
+        opacity: 0.8;
+        top:0;
+        right: 0;
+        z-index: 100;
+        .footerImg{
+          font-size: .26rem;
+        }
+      }
+    }
+  }

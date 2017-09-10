@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 371514 */
+  src: url('//at.alicdn.com/t/font_371514_a7t20qzhn96647vi.eot');
+  src: url('//at.alicdn.com/t/font_371514_a7t20qzhn96647vi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_371514_a7t20qzhn96647vi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_371514_a7t20qzhn96647vi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_371514_a7t20qzhn96647vi.svg#iconfont') format('svg');
+}
+#m-collectList {
+  padding-top:.35rem;
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #top{
+    position:fixed;
+    left:.05rem;
+    bottom:.90rem;
+    opacity: 0.7;
+    font-size:1.0rem;
+    z-index:1;
+    display:none;
+  }
+  .cancel{
+    position:absolute;
+    top:.3rem;
+    right:.7rem;
+    z-index:10;
+    .iconfont{
+      color:#ff4200;
+      font-size:.45rem;
+    }
+  }
+  .collect{
+    position:relative;
+    padding-left: .20rem;
+    padding-right: .20rem;
+    padding-bottom: .20rem;
+    .intro{
+      display: flex;
+      border:1px solid #666666;
+      padding-left:.40rem;
+      padding-top:.25rem;
+      padding-bottom:.25rem;
+      padding-right:.20rem;
+      flex-direction: row;
+      .intro-detail{
+        margin-left:.30rem;
+        display: -webkit-flex;
+        flex: 0.96;
+        flex-direction: column;
+        .intro-name{
+          font-size:.30rem;
+          color:#89591b;
+          margin-top:.14rem;
+          margin-bottom:.15rem;
+          position:relative;
+          z-index:10;
+          .iconfont{
+            font-size:.35rem;
+            color:#ff4200;
+          }
+        }
+        .price{
+          font-size: .4rem;
+          color:#ff4200;
+
+        }
+        .iconfont{
+          font-size:.30rem;
+          color:#89591b;
+        }
+        .referral{
+          font-size:.20rem;
+          color:#89591b;
+          display:block;
+          margin-top:.15rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 100%;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:2;
+        }
+
+      }
+      img{
+        width:2rem;
+        height:2rem;
+      }
+    }
+  }
+}
