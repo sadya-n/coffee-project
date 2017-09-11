@@ -6,7 +6,7 @@
 
 How to run this project?
 
- - git clone +address;
- - npm install =>file"node-module"; 
- - npm run dev ;
+ - git clone +the web URL;
+ - npm install;=>file"node_modules"
+ - npm run dev;
  - npm build;
